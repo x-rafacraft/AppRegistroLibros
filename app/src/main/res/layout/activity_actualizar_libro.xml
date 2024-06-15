@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarLibroActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="16dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/txtActualizarLibro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:text="@string/txtActualizarLibro"
+            android:textColor="@color/white"
+            android:textSize="27sp" />
+
+        <ImageView
+            android:id="@+id/imgIconActualizar"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="16dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_update" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tvNombre"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/NAMNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <EditText
+                    android:id="@+id/etNombreActualizar"
+                    android:hint="@string/etNombre"
+                    android:maxLines="1"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tvAutor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tvAutor"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TILAutor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <EditText
+                    android:id="@+id/etAutorActualizar"
+                    android:hint="@string/etAutor"
+                    android:maxLines="1"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tvPaginas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tvPaginas"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TILPaginas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <EditText
+                    android:id="@+id/etPaginasActualizar"
+                    android:hint="@string/etPaginas"
+                    android:maxLines="1"
+                    android:textSize="20sp"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

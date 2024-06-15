@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">APP-C2</string>
+
+    <string name="txtBookLibrary">Registro de Libros</string>
+
+    <string name="txtAddBook">Agregar Libro</string>
+    <string name="etNombre">Ingrese el nombre del libro</string>
+
+    <string name="tvNombre">Nombre del Libro</string>
+    <string name="tvAutor">Autor</string>
+    <string name="etAutor">Ingrese el nombre del autor</string>
+    <string name="tvPaginas">Número de Páginas</string>
+    <string name="etPaginas">Ingrese el número de páginas</string>
+
+    <string name="item_nombre">Nombre</string>
+    <string name="item_autor">Autor</string>
+    <string name="item_paginas">Paginas</string>
+
+    <string name="txtActualizarLibro">Actualizar Libro</string>
+
+</resources>
